@@ -1,0 +1,85 @@
+ body {
+  font-family: Tahoma;  
+ }
+
+.container {  
+  background-color: #F7F7F7;
+  text-align: center;  
+
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.container_son {
+    margin: 30px;
+    text-align: left;    
+}
+
+#details_balance {
+  text-align: center; 
+  padding:20px; 
+  display:flex; 
+  box-shadow: #A7A7A7 3px 3px; 
+  border: 1px solid #A7A7A7;  
+}
+
+#incomings {
+  color: green
+}
+
+#costs {
+  color: rgb(255,0,0)
+}
+
+.title_detail {
+  font-weight: bold;
+}
+
+#details_incoming {
+  width:50%; 
+  border-right: 1px solid #A7A7A7  
+}
+
+.subtitle {
+  border-bottom: 1px solid #A7A7A7  
+}
+
+.detail_history_incoming {
+  display: flex;
+  box-shadow: #A7A7A7 3px 3px; 
+  border: 1px solid #A7A7A7;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+  border-right: 5px solid green;
+}
+
+.detail_history_cost {
+  display: flex;
+  box-shadow: #A7A7A7 3px 3px; 
+  border: 1px solid #A7A7A7;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+  border-right: 5px solid red; 
+}
+
+
+
+input[type=submit]{
+  width: 100%;
+  /* position: absolute; */
+  /* right: 20px; */
+  /* bottom: 10px; */
+  background: #9C89FF;
+  color: rgb(246, 242, 244);
+  font-family: tahoma,geneva,algerian;
+  font-size: 25px;
+  height: 50px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  border: 1px solid #999;
+} 

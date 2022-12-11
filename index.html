@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Control de Gastos</title>
+  <link rel="icon" type="image/x-icon" href="897227_money_piggy_save money_savings_icon.png">
+  <link href="./style.css" rel="stylesheet" type="text/css" media="screen" />
+  <script src = "index.js"></script>
+</head>
+<body onload = "loadData()">
+  <div class = "container">
+    <h1>Control de gastos</h1>
+    <img width=100 src="https://i.gifer.com/3qQc.gif">
+    <div class="container_son">    
+      <h2>TU AHORRO</h2>      
+      <h2 id="balance">0.00 €</h2>
+      <div id="details_balance">
+        <div id="details_incoming">
+          <div class="title_detail">INGRESO</div>
+          <div id="incomings">0.00 €</div>
+        </div>
+        <div style="width:50%">
+          <div class="title_detail">GASTO</div>
+          <div id="costs">0.00 €</div>
+        </div>
+      </div>
+      <h2 class="subtitle">Historial</h2>        
+      <div id = "history">
+      </div>
+      <h2 class="subtitle">Añadir nueva transacción</h2>
+      <form onsubmit = "addEntry()">
+        <label for="concept">Concepto</label><br>
+        <input type = "text" 
+               style="width: 100%; margin-top:5px;padding:10px"
+               id = "concept" 
+               placeholder = "Añade concepto ..."
+               required>
+        <br><br>
+        <label for="amount">Cantidad<br>(negativo - gasto, positivo - ingreso)</label><br>
+        <input type = "number"
+               style="width: 100%; margin-top:5px;padding:10px" 
+               id = "amount" 
+                placeholder = "Introduce cantidad..." 
+                required>
+        <br><br>
+        <input type = "submit" 
+               value = "Añadir transacción">       
+      </form>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
